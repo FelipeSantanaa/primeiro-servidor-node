@@ -16,11 +16,4 @@ app.get('/usuarios/:nome?', (req, res) => {
   nome ? res.send(`Página do usuário ${nome}`) : res.send('Página de usuários')
 })
 
-  app.get('/objeto', (req, resp) => {
-    resp.send({
-      nome: "Joselito",
-      sobrenome: "Sem Noção",
-      melhoresAmigos: "Jorgin e Buchecha"})
-  })
-
 app.listen(port, () => console.log('O servidor está rodando...'))
